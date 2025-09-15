@@ -27,22 +27,15 @@ export default function Home() {
     // This async function fetches and transforms the data
     const fetchPartners = async () => {
       try {
-        const apiUrl = 'https://jsonplaceholder.typicode.com/users';
-        const specialties = ["Electrical", "Contractor", "Plumbing", "Painting", "Flooring", "HVAC"];
-        const response = await fetch(apiUrl);
-        if (!response.ok) throw new Error('Failed to fetch data from the API.');
-        const users = await response.json();
-
-        // Map the API data to our application's data structure
-        const formattedPartners = users.map((user, index) => ({
-          id: user.id,
-          name: user.name,
-          address: `${user.address.street}, ${user.address.suite}, ${user.address.city}`,
-          contact: user.phone.split(' ')[0],
-          specialty: specialties[index % specialties.length],
-        }));
+        // This is the only change required!
+        const apiUrl = '/data/partners.json'; // Points to the file in the public folder
         
-        setAllPartners(formattedPartners);
+        const response = await fetch(apiUrl);
+        if (!response.ok) throw new Error('Failed to fetch static data.');
+        
+        const partnersData = await response.json(); 
+        
+        setAllPartners(partnersData);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -75,13 +68,13 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>SQUARISH Partner Portal</title>
+        <title>SQUARISH! Partner Portal</title>
         <meta name="description" content="A portal for SQUARISH suppliers and contractors" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>SQUARISH Partner Portal</h1>
+        <h1 className={styles.title}>SQUARISH! Partner Portal</h1>
 
         <FilterControls
           allPartners={allPartners}
