@@ -69,8 +69,8 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>SQUARISH! Partner Portal</title>
-        <meta name="description" content="A portal for SQUARISH suppliers and contractors" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="A portal for SQUARISH! suppliers and contractors" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
