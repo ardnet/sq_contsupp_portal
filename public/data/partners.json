@@ -4,7 +4,7 @@
     "name": "A&F Design Pte Ltd",
     "address": "11 Sin Ming Road, Thomson V Two, Singapore 575629, #01-20, Singapore, 575629",
     "contact": "91002106",
-    "specialty": ""
+    "specialty": "N/A"
   },
   {
     "id": 2,
@@ -18,14 +18,14 @@
     "name": "DH Hardware Pte Ltd",
     "address": "7 Gambas Crescent, Ark@Gambas, #04-05, Singapore, 757087",
     "contact": "90682238",
-    "specialty": ""
+    "specialty": "N/A"
   },
   {
     "id": 4,
     "name": "Esperto Contractors Pte Ltd",
     "address": "82 Lorong 23 Geylang, Atrix, Singapore 388409, #03-02, Singapore, 388409",
     "contact": "97887113",
-    "specialty": ""
+    "specialty": "N/A"
   },
   {
     "id": 5,
@@ -39,7 +39,7 @@
     "name": "HYL Contractor Pte Ltd",
     "address": "7 Mandai Link, #09-28, Singapore, 728653",
     "contact": "91789888",
-    "specialty": ""
+    "specialty": "N/A"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "name": "Isco Construction Pte Ltd",
     "address": "9 Tagore Lane, #03-27, Singapore, 787472",
     "contact": "96924963",
-    "specialty": ""
+    "specialty": "N/A"
   },
   {
     "id": 9,
@@ -74,7 +74,7 @@
     "name": "Kim Lai Construction Pte Ltd",
     "address": "Block 37 Defu Lane 10, #04-77, Singapore, 539214",
     "contact": "62814883",
-    "specialty": ""
+    "specialty": "N/A"
   },
   {
     "id": 12,
