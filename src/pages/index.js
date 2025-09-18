@@ -1,13 +1,18 @@
 import { useState, useEffect, useMemo } from 'react';
 import Head from 'next/head';
+import { useSession } from 'next-auth/react'; // Import useSession
 import styles from '../styles/Home.module.css';
 import PartnerCard from '../components/PartnerCard';
 import FilterControls from '../components/FilterControls';
+import LoginModal from '../components/LoginModal'; // Import the modal
 
 // The number of items to show per page
 const ITEMS_PER_PAGE = 6;
 
 export default function Home() {
+  const { data: session } = useSession(); // Get session status
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for the modal
+
   // --- STATE MANAGEMENT ---
   const [allPartners, setAllPartners] = useState([]); // Stores the original list from the API
   const [isLoading, setIsLoading] = useState(true); // For the loading state
@@ -73,6 +78,9 @@ export default function Home() {
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
 
+      {/* Conditionally render the LoginModal */}
+      <LoginModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+
       <main className={styles.main}>
         <h1 className={styles.title}>SQUARISH! Partner Portal</h1>
 
@@ -89,6 +97,17 @@ export default function Home() {
         {!isLoading && !error && (
           <>
             <div className={styles.partnerList}>
+              {partnersToShow.map(partner => (
+                <PartnerCard 
+                  key={partner.id} 
+                  partner={partner}
+                  isLoggedIn={!!session} // Pass login status
+                  onAuthRequired={() => setIsModalOpen(true)} // Pass function to open modal
+                />
+              ))}
+            </div>
+
+            <div className={styles.partnerList}>
               {partnersToShow.length > 0 ? (
                 partnersToShow.map(partner => <PartnerCard key={partner.id} partner={partner} />)
               ) : (
@@ -103,6 +122,8 @@ export default function Home() {
                 </button>
               </div>
             )}
+
+
           </>
         )}
       </main>

@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { useSession } from 'next-auth/react'; // Import useSession
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
+import LoginModal from '../../components/LoginModal'; // Import the modal
 
 export default function PartnerDetail() {
+  const { data: session, status } = useSession(); // Get session status
   const router = useRouter();
   const { id } = router.query; // Get the 'id' from the URL
 
@@ -14,7 +17,7 @@ export default function PartnerDetail() {
 
   useEffect(() => {
     // Only fetch data if the id is available in the router query
-    if (id) {
+    if (status === 'authenticated' && id) {
       const fetchPartnerData = async () => {
         try {
           const response = await fetch('/data/partners.json');
@@ -38,7 +41,17 @@ export default function PartnerDetail() {
 
       fetchPartnerData();
     }
-  }, [id]); // This effect runs whenever the 'id' changes
+  }, [id, status]); // This effect runs whenever the 'id' changes
+
+  // --- PROTECTION LOGIC ---
+  if (status === 'loading') {
+    return <div className={styles.statusMessage}>Loading...</div>;
+  }
+
+  if (status === 'unauthenticated') {
+    // If not logged in, show the LoginModal. No page content is rendered.
+    return <LoginModal isOpen={true} onClose={() => router.push('/')} />;
+  }
 
   if (isLoading) {
     return <div className={styles.statusMessage}>Loading partner details...</div>;
