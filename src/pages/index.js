@@ -107,14 +107,6 @@ export default function Home() {
               ))}
             </div>
 
-            <div className={styles.partnerList}>
-              {partnersToShow.length > 0 ? (
-                partnersToShow.map(partner => <PartnerCard key={partner.id} partner={partner} />)
-              ) : (
-                <p className={styles.statusMessage}>No partners found matching your criteria.</p>
-              )}
-            </div>
-
             {hasMorePartners && (
               <div className={styles.loadMoreContainer}>
                 <button onClick={() => setCurrentPage(prev => prev + 1)} className={styles.loadMoreBtn}>
