@@ -36,20 +36,6 @@ export default function FilterControls({ allPartners, filters, setFilters, onFil
           value={filters.name}
           onChange={handleTextChange}
         />
-        <input
-          type="text"
-          name="address"
-          placeholder="Filter by address..."
-          value={filters.address}
-          onChange={handleTextChange}
-        />
-        <input
-          type="text"
-          name="contact"
-          placeholder="Filter by contact..."
-          value={filters.contact}
-          onChange={handleTextChange}
-        />
       </div>
       <div className={styles.specialtyFilters}>
         {uniqueSpecialties.map(specialty => (
