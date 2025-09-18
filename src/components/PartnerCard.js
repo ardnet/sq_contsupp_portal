@@ -10,7 +10,7 @@ export default function PartnerCard({ partner, isLoggedIn, onAuthRequired }) {
 
   const AuthRequiredButton = () => (
     <button onClick={onAuthRequired} className={styles.detailLink}>
-      More detail
+      Login for more detail
     </button>
   );
 
