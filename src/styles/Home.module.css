@@ -261,3 +261,106 @@
   color: #555;
   margin: 0 5px;
 }
+
+/* --- Trusted Partners Section --- */
+.trustedPartnersSection {
+  width: 100%;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.trustedPartnersSection h2 {
+  font-size: 2rem;
+  color: #34495e;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.trustedPartnersGrid {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  padding: 1rem 0.5rem;
+  /* Hide scrollbar for a cleaner look */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.trustedPartnersGrid::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.trustedPartnerCard {
+  flex: 0 0 180px; /* Prevents shrinking, sets a fixed width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trustedPartnerCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.trustedPartnerLogo {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.trustedPartnerCard h3 {
+  font-size: 1.1rem;
+  margin: 0 0 1rem 0;
+  color: #2c3e50;
+  flex-grow: 1; /* Pushes the button to the bottom */
+}
+
+.trustedDetailButton {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid #bdc3c7;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.trustedDetailButton:hover {
+  background-color: #bdc3c7;
+}
+
+/* Title for the main list */
+.allPartnersTitle {
+  font-size: 2rem;
+  color: #34495e;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Add to the end of your file --- */
+
+.trustedBanner {
+  background-color: #f1c40f;
+  color: #333;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+/* Tweak detail header to align logo and title */
+.detailHeader {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}

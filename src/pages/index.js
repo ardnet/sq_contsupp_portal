@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css';
 import PartnerCard from '../components/PartnerCard';
 import FilterControls from '../components/FilterControls';
 import LoginModal from '../components/LoginModal'; // Import the modal
+import TrustedPartners from '../components/TrustedPartners'; // Import the new component
 
 // The number of items to show per page
 const ITEMS_PER_PAGE = 6;
@@ -84,6 +85,13 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>SQUARISH! Partner Portal</h1>
 
+        {/* --- ADD THE NEW COMPONENT HERE --- */}
+        <TrustedPartners 
+          isLoggedIn={!!session} 
+          onAuthRequired={() => setIsModalOpen(true)} 
+        />
+
+        <h2 className={styles.allPartnersTitle}>All Partners</h2>
         <FilterControls
           allPartners={allPartners}
           filters={filters}
