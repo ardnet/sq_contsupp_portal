@@ -6,22 +6,30 @@ import styles from '../styles/Home.module.css';
 const ITEMS_PER_PAGE = 3; // Show 3 partners at a time
 
 export default function TrustedPartners({ isLoggedIn, onAuthRequired }) {
-  const [allPartners, setAllPartners] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
+  const [partners, setPartners] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const scrollContainerRef = useRef(null); // Create a ref for the scrollable container
 
   useEffect(() => {
     fetch('/data/trustedPartners.json')
       .then(res => res.json())
       .then(data => {
-        setAllPartners(data);
+        setPartners(data);
         setIsLoading(false);
       });
   }, []);
 
-  // Calculate which partners to show based on the current page
-  const partnersToShow = allPartners.slice(0, currentPage * ITEMS_PER_PAGE);
-  const hasMorePartners = partnersToShow.length < allPartners.length;
+  // --- NEW: Scroll handler functions ---
+  const handleScroll = (direction) => {
+    const scrollAmount = 300; // Amount to scroll in pixels
+    if (scrollContainerRef.current) {
+      if (direction === 'left') {
+        scrollContainerRef.current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      } else {
+        scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      }
+    }
+  };
 
   const DetailButton = ({ partnerId }) => {
     // This part remains the same
@@ -46,9 +54,18 @@ export default function TrustedPartners({ isLoggedIn, onAuthRequired }) {
       {isLoading ? (
         <p>Loading trusted partners...</p>
       ) : (
-        <>
-          <div className={styles.trustedPartnersGrid}>
-            {partnersToShow.map(partner => (
+        // --- NEW: Wrapper for buttons and list ---
+        <div className={styles.trustedPartnersContainer}>
+          <button 
+            onClick={() => handleScroll('left')} 
+            className={`${styles.scrollButton} ${styles.left}`}
+            aria-label="Scroll left"
+          >
+            &#8249;
+          </button>
+          
+          <div className={styles.trustedPartnersGrid} ref={scrollContainerRef}>
+            {partners.map(partner => (
               <div key={partner.id} className={styles.trustedPartnerCard}>
                 <Image
                   src={partner.logoUrl}
@@ -62,16 +79,15 @@ export default function TrustedPartners({ isLoggedIn, onAuthRequired }) {
               </div>
             ))}
           </div>
-
-          {/* --- NEW: Load More Button --- */}
-          {hasMorePartners && (
-            <div className={styles.loadMoreContainer}>
-              <button onClick={() => setCurrentPage(prev => prev + 1)} className={styles.loadMoreBtn}>
-                Load More
-              </button>
-            </div>
-          )}
-        </>
+          
+          <button 
+            onClick={() => handleScroll('right')} 
+            className={`${styles.scrollButton} ${styles.right}`}
+            aria-label="Scroll right"
+          >
+            &#8250;
+          </button>
+        </div>
       )}
     </section>
   );

@@ -368,3 +368,70 @@
   align-items: center;
   gap: 1.5rem;
 }
+
+/* --- Add this new class for the main container --- */
+.trustedPartnersContainer {
+  position: relative;
+}
+
+/* --- Replace your old .trustedPartnersGrid with this --- */
+.trustedPartnersGrid {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  padding: 1rem 0.5rem;
+  scroll-behavior: smooth; /* Makes programmatic scroll smooth */
+  /* Hide scrollbar for a cleaner look */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.trustedPartnersGrid::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* --- Add back the flex property to this card style --- */
+.trustedPartnerCard {
+  flex: 0 0 180px; /* Prevents shrinking, sets a fixed width */
+  display: flex;
+  /* ... rest of the card styles are the same */
+}
+
+/* --- Add these NEW styles for the scroll buttons --- */
+.scrollButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+.scrollButton:hover {
+  background-color: #fff;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.scrollButton.left {
+  left: -20px;
+}
+
+.scrollButton.right {
+  right: -20px;
+}
+
+/* Hide buttons on mobile devices */
+@media (max-width: 768px) {
+  .scrollButton {
+    display: none;
+  }
+}
