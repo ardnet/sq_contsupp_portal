@@ -72,7 +72,8 @@ export default function Home() {
 
   // --- RENDER ---
   return (
-    <div className={styles.container}>
+    <>
+    
       <Head>
         <title>SQUARISH! Partner Portal</title>
         <meta name="description" content="A portal for SQUARISH! suppliers and contractors" />
@@ -82,7 +83,7 @@ export default function Home() {
       {/* Conditionally render the LoginModal */}
       <LoginModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
-      <main className={styles.main}>
+      <div className={styles.container}>
         <h1 className={styles.title}>SQUARISH! Partner Portal</h1>
 
         {/* --- ADD THE NEW COMPONENT HERE --- */}
@@ -126,7 +127,8 @@ export default function Home() {
 
           </>
         )}
-      </main>
+      
     </div>
+    </>
   );
 }
