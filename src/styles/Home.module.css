@@ -278,20 +278,16 @@
 }
 
 .trustedPartnersGrid {
-  display: flex;
+  display: grid;
   gap: 1.5rem;
-  overflow-x: auto; /* Enables horizontal scrolling */
-  padding: 1rem 0.5rem;
-  /* Hide scrollbar for a cleaner look */
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  /* Creates a responsive grid with columns between 180px and 1fr */
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 }
 .trustedPartnersGrid::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
 
 .trustedPartnerCard {
-  flex: 0 0 180px; /* Prevents shrinking, sets a fixed width */
   display: flex;
   flex-direction: column;
   align-items: center;
