@@ -280,9 +280,17 @@
 .trustedPartnersGrid {
   display: grid;
   gap: 1.5rem;
-  /* Change `auto-fill` to `auto-fit` for better alignment */
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  /* Default to a single column on small screens */
+  grid-template-columns: 1fr;
 }
+
+/* On screens 768px and wider (tablets, desktops), switch to a 3-column layout */
+@media (min-width: 768px) {
+  .trustedPartnersGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .trustedPartnersGrid::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
