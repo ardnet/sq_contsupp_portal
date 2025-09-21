@@ -17,13 +17,15 @@ export default function PartnerCard({ partner, isLoggedIn, onAuthRequired }) {
   return (
     <div className={styles.partnerCard}>
       <h3>{partner.name}</h3>
-      <p><strong>Address:</strong> {partner.address}</p>
-      <p><strong>Contact:</strong> {partner.contact}</p>
+      
+      {/* --- CONDITIONAL RENDERING --- */}
+      {/* These <p> tags will only render if the data exists */}
+      {partner.address && <p><strong>Address:</strong> {partner.address}</p>}
+      {partner.contact && <p><strong>Contact:</strong> {partner.contact}</p>}
+      
       <p><strong>Specialty:</strong> {partner.specialty}</p>
-
-      {/* --- CONDITIONAL LINK --- */}
+      
       {isLoggedIn ? <DetailLink /> : <AuthRequiredButton />}
-  
     </div>
   );
 }

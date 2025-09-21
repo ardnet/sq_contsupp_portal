@@ -34,10 +34,12 @@ export default function Home() {
     const fetchPartners = async () => {
       try {
         // This is the only change required!
-        const apiUrl = '/data/partners.json'; // Points to the file in the public folder
+        // const apiUrl = '/data/partners.json'; // Points to the file in the public folder
+        const apiUrl = '/api/partners'; // This now points to our secure API route
         
         const response = await fetch(apiUrl);
-        if (!response.ok) throw new Error('Failed to fetch static data.');
+        // if (!response.ok) throw new Error('Failed to fetch static data.');
+        if (!response.ok) throw new Error('Failed to fetch data from the API.');
         
         const partnersData = await response.json(); 
         
