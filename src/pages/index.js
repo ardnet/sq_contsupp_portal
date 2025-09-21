@@ -59,12 +59,21 @@ export default function Home() {
     return allPartners.filter(partner => {
       const { name, address, contact, specialties } = filters;
       // Return true only if all conditions are met
-      return (
-        partner.name.toLowerCase().includes(name.toLowerCase()) &&
-        partner.address.toLowerCase().includes(address.toLowerCase()) &&
-        partner.contact.includes(contact) &&
-        (specialties.length === 0 || specialties.includes(partner.specialty))
-      );
+      // return (
+      //   partner.name.toLowerCase().includes(name.toLowerCase()) &&
+      //   partner.address.toLowerCase().includes(address.toLowerCase()) &&
+      //   partner.contact.includes(contact) &&
+      //   (specialties.length === 0 || specialties.includes(partner.specialty))
+      // );
+      // Check if each property exists before trying to filter on it.
+      // The (partner.address || '') pattern defaults to an empty string if the property is undefined.
+      const nameMatch = (partner.name || '').toLowerCase().includes(name.toLowerCase());
+      const addressMatch = (partner.address || '').toLowerCase().includes(address.toLowerCase());
+      const contactMatch = (partner.contact || '').includes(contact);
+      const specialtyMatch = specialties.length === 0 || specialties.includes(partner.specialty);
+      
+      return nameMatch && addressMatch && contactMatch && specialtyMatch;
+
     });
   }, [filters, allPartners]);
 
