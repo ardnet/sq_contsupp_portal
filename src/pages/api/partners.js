@@ -7,7 +7,7 @@ import { authOptions } from './auth/[...nextauth]';
 
 // --- NEW: Import the JSON data directly ---
 // The path is relative from this file (pages/api/partners.js) to the root
-import partners from '../../data/partners.json';
+import partners from '../../../../public/data/partners.json';
 
 export default async function handler(req, res) {
   const session = await getServerSession(req, res, authOptions);
