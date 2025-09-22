@@ -20,12 +20,14 @@ export default function Home() {
   const [error, setError] = useState(null); // For any API errors
   const [currentPage, setCurrentPage] = useState(1); // For pagination
 
-  // State for each filter input
+  // --- UPDATED: Add new filter states ---
   const [filters, setFilters] = useState({
     name: '',
     address: '',
     contact: '',
     specialties: [],
+    category: 'All', // Default to 'All'
+    subCategories: [],
   });
 
   // --- DATA FETCHING ---
@@ -57,23 +59,18 @@ export default function Home() {
   // --- FILTERING LOGIC ---
   const filteredPartners = useMemo(() => {
     return allPartners.filter(partner => {
-      const { name, address, contact, specialties } = filters;
-      // Return true only if all conditions are met
-      // return (
-      //   partner.name.toLowerCase().includes(name.toLowerCase()) &&
-      //   partner.address.toLowerCase().includes(address.toLowerCase()) &&
-      //   partner.contact.includes(contact) &&
-      //   (specialties.length === 0 || specialties.includes(partner.specialty))
-      // );
-      // Check if each property exists before trying to filter on it.
-      // The (partner.address || '') pattern defaults to an empty string if the property is undefined.
+      const { name, address, contact, specialties, category, subCategories } = filters;
+      
       const nameMatch = (partner.name || '').toLowerCase().includes(name.toLowerCase());
       const addressMatch = (partner.address || '').toLowerCase().includes(address.toLowerCase());
       const contactMatch = (partner.contact || '').includes(contact);
       const specialtyMatch = specialties.length === 0 || specialties.includes(partner.specialty);
       
-      return nameMatch && addressMatch && contactMatch && specialtyMatch;
-
+      // --- NEW: Add category and sub-category matching logic ---
+      const categoryMatch = category === 'All' || partner.category === category;
+      const subCategoryMatch = subCategories.length === 0 || subCategories.includes(partner.subCategory);
+      
+      return nameMatch && addressMatch && contactMatch && specialtyMatch && categoryMatch && subCategoryMatch;
     });
   }, [filters, allPartners]);
 

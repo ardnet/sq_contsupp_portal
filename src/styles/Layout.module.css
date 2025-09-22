@@ -79,3 +79,32 @@
   margin: 0;
   color: #7f8c8d;
 }
+
+/* --- Add to your file --- */
+
+/* Style for grouping filter types */
+.filterSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.filterSection h4 {
+  margin: 0;
+  color: #555;
+  font-weight: 600;
+}
+
+/* Styles for the new Category radio buttons */
+.categoryFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
