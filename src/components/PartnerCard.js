@@ -23,7 +23,8 @@ export default function PartnerCard({ partner, isLoggedIn, onAuthRequired }) {
       {partner.address && <p><strong>Address:</strong> {partner.address}</p>}
       {partner.contact && <p><strong>Contact:</strong> {partner.contact}</p>}
       
-      <p><strong>Specialty:</strong> {partner.specialty}</p>
+      <p><strong>Category:</strong> {partner.category}</p>
+      <p><strong>Sub-Category:</strong> {partner.subCategory}</p>
       
       {isLoggedIn ? <DetailLink /> : <AuthRequiredButton />}
     </div>
