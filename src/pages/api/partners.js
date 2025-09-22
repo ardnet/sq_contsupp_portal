@@ -27,6 +27,9 @@ export default async function handler(req, res) {
       id: partner.id,
       name: partner.name,
       specialty: partner.specialty,
+      specialty: partner.specialty,
+      category: partner.category,       // <-- ADD THIS
+      subCategory: partner.subCategory, // <-- ADD THIS
     }));
     res.status(200).json(publicData);
   }
