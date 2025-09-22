@@ -21,7 +21,7 @@ export default function TrustedPartnerDetail() {
       const fetchPartnerData = async () => {
         try {
           // --- IMPORTANT: Fetch from the correct JSON file ---
-          const response = await fetch('/data/trustedPartners.json');
+          const response = await fetch('/api/trusted-partners');
           if (!response.ok) throw new Error('Could not fetch trusted partner data.');
           
           const allPartners = await response.json();
@@ -82,12 +82,27 @@ export default function TrustedPartnerDetail() {
           </div>
         </div>
         
+        {/* --- Company Bio Section --- */}
         <div className={styles.detailSection}>
-          <h3>About This Partner</h3>
-          <p>
-            {partner.name} is one of our most valued partners, recognized for their consistent quality and reliability. 
-            More detailed information, including their full bio and project history, is available to authorized personnel.
-          </p>
+          <h3>Company Bio</h3>
+          <p>{partner.bio}</p>
+        </div>
+
+        {/* --- Contact and Address Section --- */}
+        <div className={styles.detailSection}>
+          <h3>Contact Information</h3>
+          <p><strong>Address:</strong> {partner.address}</p>
+          <p><strong>Contact:</strong> {partner.contact}</p>
+          <p><strong>Specialty:</strong> {partner.specialty}</p>
+          <p><strong>Partner Since:</strong> {new Date(partner.memberSince).toLocaleDateString()}</p>
+        </div>
+
+        {/* --- Projects Section (maps over the array) --- */}
+        <div className={styles.detailSection}>
+          <h3>Recent Projects</h3>
+          <ul>
+            {partner.projects.map(project => <li key={project}>{project}</li>)}
+          </ul>
         </div>
 
         <Link href="/" className={styles.backLink}>

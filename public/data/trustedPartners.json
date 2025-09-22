@@ -2,31 +2,23 @@
   {
     "id": 1,
     "name": "Alpha Co #1",
-    "logoUrl": "https://placehold.co/150x150/3498db/ffffff?text=A"
+    "logoUrl": "https://placehold.co/150x150/3498db/ffffff?text=A",
+    "address": "10 Main Street, Singapore 100001",
+    "contact": "6000-1001",
+    "specialty": "Electrical",
+    "memberSince": "2022-08-15",
+    "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects.",
+    "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"]
   },
   {
     "id": 2,
     "name": "Beta Pte Ltd #2",
-    "logoUrl": "https://placehold.co/150x150/2ecc71/ffffff?text=B"
-  },
-  {
-    "id": 3,
-    "name": "Gamma Group #3",
-    "logoUrl": "https://placehold.co/150x150/9b59b6/ffffff?text=G"
-  },
-  {
-    "id": 4,
-    "name": "Delta Services #4",
-    "logoUrl": "https://placehold.co/150x150/e74c3c/ffffff?text=D"
-  },
-  {
-    "id": 5,
-    "name": "Omega Builders #5",
-    "logoUrl": "https://placehold.co/150x150/f1c40f/ffffff?text=O"
-  },
-  {
-    "id": 6,
-    "name": "Sigma Solutions #6",
-    "logoUrl": "https://placehold.co/150x150/1abc9c/ffffff?text=S"
+    "logoUrl": "https://placehold.co/150x150/2ecc71/ffffff?text=B",
+    "address": "20 Main Street, Singapore 100002",
+    "contact": "6000-1002",
+    "specialty": "Contractor",
+    "memberSince": "2021-01-20",
+    "bio": "As a general contractor, Beta Pte Ltd #2 has successfully managed numerous large-scale construction projects.",
+    "projects": ["Orchard Road Tower Construction", "Sentosa Resort Renovation"]
   }
 ]

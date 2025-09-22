@@ -11,7 +11,7 @@ export default function TrustedPartners({ isLoggedIn, onAuthRequired }) {
   const scrollContainerRef = useRef(null); // Create a ref for the scrollable container
 
   useEffect(() => {
-    fetch('/data/trustedPartners.json')
+    fetch('/api/trusted-partners')
       .then(res => res.json())
       .then(data => {
         setPartners(data);
