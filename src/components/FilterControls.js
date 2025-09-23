@@ -2,23 +2,39 @@ import { useMemo } from 'react';
 import styles from '../styles/Home.module.css';
 
 // --- NEW: Define the relationship between categories and sub-categories ---
-const subCategoryMap = {
-  Contractor: ["Hacker", "Tiler", "Plumbing", "Partition", "Carpentry", "Electrical", "Painters", "Cleaner", "Flooring", "Counter Tops"],
-  Supplier: ["Doors", "Windows", "Glass", "Curtains & Fabrics", "Paints"],
-};
+// const subCategoryMap = {
+//   Contractor: ["Hacker", "Tiler", "Plumbing", "Partition", "Carpentry", "Electrical", "Painters", "Cleaner", "Flooring", "Counter Tops"],
+//   Supplier: ["Doors", "Windows", "Glass", "Curtains & Fabrics", "Paints"],
+// };
 
 export default function FilterControls({ allPartners, filters, setFilters, onFilterChange }) {
-  const allPossibleSubCategories = useMemo(() => {
-    const combined = [...subCategoryMap.Contractor, ...subCategoryMap.Supplier];
-    // Use a Set to get unique values, then convert back to an array and sort
-    return Array.from(new Set(combined)).sort();
-  }, []); // Empty dependency array because our map is static
+  // const allPossibleSubCategories = useMemo(() => {
+  //   const combined = [...subCategoryMap.Contractor, ...subCategoryMap.Supplier];
+  //   // Use a Set to get unique values, then convert back to an array and sort
+  //   return Array.from(new Set(combined)).sort();
+  // }, []); // Empty dependency array because our map is static
 
   // --- UPDATED: Handlers for new filters ---
-   const allUniqueSubCategories = useMemo(() => {
-    const allSubCats = allPartners.flatMap(p => p.subCategory);
+  // const allUniqueSubCategories = useMemo(() => {
+  //   const allSubCats = allPartners.flatMap(p => p.subCategory);
+  //   return Array.from(new Set(allSubCats)).sort();
+  // }, [allPartners]);
+
+  // --- NEW: A single, dynamic way to get sub-category options ---
+  const subCategoriesToShow = useMemo(() => {
+    if (!allPartners) return [];
+
+    // 1. Determine which partners to look at
+    const relevantPartners = filters.category === 'All'
+      ? allPartners
+      : allPartners.filter(p => p.category === filters.category);
+
+    // 2. Get all sub-categories from those partners
+    const allSubCats = relevantPartners.flatMap(p => p.subCategory || []);
+
+    // 3. Return a unique, sorted list
     return Array.from(new Set(allSubCats)).sort();
-  }, [allPartners]);
+  }, [allPartners, filters.category]); // Recalculates when data or category changes
 
   const handleCategoryChange = (e) => {
     const { value } = e.target;
@@ -44,10 +60,10 @@ export default function FilterControls({ allPartners, filters, setFilters, onFil
     onFilterChange();
   };
 
-   // --- UPDATED: This logic now uses the correct list for the "All" case ---
-  const subCategoriesToShow = filters.category === 'All' 
-    ? allPossibleSubCategories // Use the new combined list
-    : subCategoryMap[filters.category];
+  //  // --- UPDATED: This logic now uses the correct list for the "All" case ---
+  // const subCategoriesToShow = filters.category === 'All' 
+  //   ? allPossibleSubCategories // Use the new combined list
+  //   : subCategoryMap[filters.category];
 
   return (
     <div className={styles.filters}>
@@ -82,7 +98,6 @@ export default function FilterControls({ allPartners, filters, setFilters, onFil
 
       <div className={styles.filterSection}>
         <h4>
-          {/* Dynamically change the title */}
           {filters.category === 'All' ? 'All Sub-Categories' : `${filters.category} Sub-Categories`}
         </h4>
         <div className={styles.specialtyFilters}>
