@@ -9,7 +9,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Supplier",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Supplier",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Supplier",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Supplier",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Windows", "Glass"]
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Supplier",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 12,
@@ -141,7 +141,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Windows", "Glass"]
   },
   {
     "id": 13,
@@ -153,7 +153,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 14,
@@ -165,7 +165,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Paints", "Curtains & Fabrics"]
   },
   {
     "id": 15,
@@ -177,7 +177,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Supplier",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 16,
@@ -189,7 +189,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Paints", "Curtains & Fabrics"]
   },
   {
     "id": 17,
@@ -201,7 +201,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 18,
@@ -213,7 +213,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 19,
@@ -225,7 +225,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 20,
@@ -237,7 +237,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 21,
@@ -249,7 +249,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Hacker", "Tiler", "Flooring"]
   },
   {
     "id": 22,
@@ -261,7 +261,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Hacker", "Tiler", "Flooring"]
   },
   {
     "id": 23,
@@ -273,7 +273,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 24,
@@ -285,7 +285,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 25,
@@ -297,7 +297,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 26,
@@ -309,7 +309,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Hacker", "Tiler", "Flooring"]
   },
   {
     "id": 27,
@@ -321,7 +321,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 28,
@@ -333,7 +333,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 29,
@@ -345,7 +345,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Hacker", "Tiler", "Flooring"]
   },
   {
     "id": 30,
@@ -357,7 +357,7 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 31,
@@ -369,6 +369,6 @@
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects. With over a decade of experience, we pride ourselves on safety, reliability, and cutting-edge technology.",
     "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
     "category": "Contractor",
-    "subCategory": "Electrical"
+    "subCategory": ["Plumbing", "Cleaner"]
   }
 ]

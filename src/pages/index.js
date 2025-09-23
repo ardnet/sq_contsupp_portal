@@ -68,7 +68,8 @@ export default function Home() {
       
       // --- NEW: Add category and sub-category matching logic ---
       const categoryMatch = category === 'All' || partner.category === category;
-      const subCategoryMatch = subCategories.length === 0 || subCategories.includes(partner.subCategory);
+      const subCategoryMatch = subCategories.length === 0 || 
+        subCategories.some(sc => partner.subCategory.includes(sc));
       
       return nameMatch && addressMatch && contactMatch && specialtyMatch && categoryMatch && subCategoryMatch;
     });
