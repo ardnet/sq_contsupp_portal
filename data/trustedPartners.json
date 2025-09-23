@@ -7,7 +7,9 @@
     "contact": "6000-1001",
     "memberSince": "2022-08-15",
     "bio": "Alpha Co #1 is a leading provider of innovative electrical solutions for residential and commercial projects.",
-    "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"]
+    "projects": ["Marina Bay Sands Lighting Grid", "Changi Airport T5 Wiring"],
+    "category": "Contractor",
+    "subCategory": ["Plumbing", "Cleaner"]
   },
   {
     "id": 2,
@@ -17,6 +19,8 @@
     "contact": "6000-1002",
     "memberSince": "2021-01-20",
     "bio": "As a general contractor, Beta Pte Ltd #2 has successfully managed numerous large-scale construction projects.",
-    "projects": ["Orchard Road Tower Construction", "Sentosa Resort Renovation"]
+    "projects": ["Orchard Road Tower Construction", "Sentosa Resort Renovation"],
+    "category": "Contractor",
+    "subCategory": ["Plumbing", "Cleaner"]
   }
 ]
