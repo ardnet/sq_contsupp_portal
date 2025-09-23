@@ -9,6 +9,11 @@ const subCategoryMap = {
 
 export default function FilterControls({ allPartners, filters, setFilters, onFilterChange }) {
   // --- UPDATED: Handlers for new filters ---
+   const allUniqueSubCategories = useMemo(() => {
+    const allSubCats = allPartners.flatMap(p => p.subCategory);
+    return Array.from(new Set(allSubCats)).sort();
+  }, [allPartners]);
+
   const handleCategoryChange = (e) => {
     const { value } = e.target;
     // When category changes, reset the sub-category selections
