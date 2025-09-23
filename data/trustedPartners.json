@@ -1,182 +1,230 @@
 [
-  {
-    "id": 1,
-    "name": "A&F Design Pte Ltd",
-    "logoUrl": "",
-    "address": "11 Sin Ming Road, Thomson V Two, Singapore 575629, #01-20, Singapore, 575629",
-    "contact": "91002106",
-    "memberSince": "",
-    "bio": "",
-    "projects": [],
-    "category": "Contractor",
-    "subCategory": [
-      "Plumbing",
-      "Cleaner"
-    ]
-  },
-  {
-    "id": 2,
-    "name": "Experto Contractors Pte Ltd",
-    "logoUrl": "",
-    "address": "82 Lorong 23 Geylang, Atrix, Singapore 388409, #03-02, Singapore, 388409",
-    "contact": "97887113",
-    "memberSince": "",
-    "bio": "",
-    "projects": [],
-    "category": "Contractor",
-    "subCategory": [
-      "Plumbing",
-      "Cleaner"
-    ]
-  },
-  {
-    "id": 3,
-    "name": "CS Electrical&Plumbing Services",
-    "logoUrl": "",
-    "address": "82 Bedok North Road, #09-308, Singapore, 460082",
-    "contact": "90703143",
-    "memberSince": "",
-    "bio": "",
-    "projects": [],
-    "category": "Supplier",
-    "subCategory": [
-      "Plumbing",
-      "Cleaner"
-    ]
-  },
-  {
-    "id": 4,
-    "name": "DH Hardware Pte Ltd",
-    "logoUrl": "",
-    "address": "7 Gambas Crescent, Ark@Gambas, #04-05, Singapore, 757087",
-    "contact": "90682238",
-    "memberSince": "",
-    "bio": "",
-    "projects": [],
-    "category": "Supplier",
-    "subCategory": [
-      "Plumbing",
-      "Cleaner"
-    ]
-  },
-  {
-    "id": 5,
-    "name": "GUSH",
-    "logoUrl": "",
-    "address": "BCA Academy, 200 Braddell Roaad, Block B, B2-1 (#02-09)",
-    "contact": "81892066",
-    "memberSince": "",
-    "bio": "",
-    "projects": [],
-    "category": "Contractor",
-    "subCategory": [
-      "Plumbing",
-      "Cleaner"
-    ]
-  },
-  {
-    "id": 6,
-    "name": "HYL Contractor Pte Ltd",
-    "logoUrl": "",
-    "address": "7 Mandai Link, #09-28, Mandai Foodlink, Singapore 728653",
-    "contact": "90232281",
-    "memberSince": "",
-    "bio": "",
-    "projects": [],
-    "category": "Supplier",
-    "subCategory": [
-      "Plumbing",
-      "Cleaner"
-    ]
-  },
-  {
-    "id": 7,
-    "name": "Isco Construction Pte Ltd",
-    "logoUrl": "",
-    "address": "7030 Ang Mo Kio Avenue 5, #08-55, Northstar@AMK, Singapore 569880",
-    "contact": "62507877",
-    "memberSince": "",
-    "bio": "",
-    "projects": [],
-    "category": "Supplier",
-    "subCategory": [
-      "Plumbing",
-      "Cleaner"
-    ]
-  },
-  {
-    "id": 8,
-    "name": "Jian Yit Construction Pte Ltd",
-    "logoUrl": "",
-    "address": "10 Admiralty Street, #05-39, North Link Building, Singapore 757695",
-    "contact": "96658823",
-    "memberSince": "",
-    "bio": "",
-    "projects": [],
-    "category": "Supplier",
-    "subCategory": [
-      "Plumbing",
-      "Cleaner"
-    ]
-  },
-  {
-    "id": 9,
-    "name": "InnoDeck",
-    "logoUrl": "",
-    "address": "401 Commonwealth Drive, Haw Par Technocentre, #07-03, Singapore, 149598",
-    "contact": "64652021",
-    "memberSince": "",
-    "bio": "",
-    "projects": [],
-    "category": "Supplier",
-    "subCategory": [
-      "Plumbing",
-      "Cleaner"
-    ]
-  },
-  {
-    "id": 10,
-    "name": "Jia Cor Engineering",
-    "logoUrl": "",
-    "address": "1 Yishun Street 23, #05-19, YS-ONE, Singapore 768441",
-    "contact": "88588826",
-    "memberSince": "",
-    "bio": "",
-    "projects": [],
-    "category": "Supplier",
-    "subCategory": [
-      "Plumbing",
-      "Cleaner"
-    ]
-  },
-  {
-    "id": 11,
-    "name": "Kim huat construction pte ltd",
-    "logoUrl": "",
-    "address": "1 Soon Lee Street, #04-54, Pioneer Centre, Singapore 627605",
-    "contact": "98578501",
-    "memberSince": "",
-    "bio": "",
-    "projects": [],
-    "category": "Supplier",
-    "subCategory": [
-      "Plumbing",
-      "Cleaner"
-    ]
-  },
-  {
-    "id": 12,
-    "name": "M Metal Pte Ltd",
-    "logoUrl": "",
-    "address": "32, #03-12, Defu Lane 10, Singapore 539213",
-    "contact": "91275328",
-    "memberSince": "",
-    "bio": "",
-    "projects": [],
-    "category": "Supplier",
-    "subCategory": [
-      "Plumbing",
-      "Cleaner"
-    ]
-  }
+    {
+        "id": 1,
+        "name": "CS Electrical&Plumbing Services",
+        "logoUrl": "",
+        "address": "82 Bedok North Road, #09-308, Singapore",
+        "contact": "90703143",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Contractor",
+        "subCategory": ["Electrical", "Plumbing"]
+    },
+    {
+        "id": 2,
+        "name": "DH Hardware Pte Ltd",
+        "logoUrl": "",
+        "address": "7 Gambas Crescent, Ark@Gambas, #04-05",
+        "contact": "90682238",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Contractor",
+        "subCategory": ["Plumbing"]
+    },
+    {
+        "id": 3,
+        "name": "GUSH",
+        "logoUrl": "",
+        "address": "BCA Academy, 200 Braddell Roaad, Block B",
+        "contact": "81892066, Jade",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Supplier",
+        "subCategory": ["Paints"]
+    },
+    {
+        "id": 4,
+        "name": "JHome Design & Reno Pte Ltd",
+        "logoUrl": "",
+        "address": "216 Yishun Street 21, #04-315, Singapore",
+        "contact": "94233739",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Contractor",
+        "subCategory": ["Masonry Works"]
+    },
+    {
+        "id": 5,
+        "name": "Kailai Maintenance And Services Pte Ltd",
+        "logoUrl": "",
+        "address": "200 Jalan Sultan, Textile Centre, Singapore",
+        "contact": "85060468",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Contractor",
+        "subCategory": ["Electrical", "Plumbing"]
+    },
+    {
+        "id": 6,
+        "name": "LCY Design & Renovation",
+        "logoUrl": "",
+        "address": "Lot 1001137-01 Jalan Ban Foo, Ulu Tiram",
+        "contact": "+60 18776 8723",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Contractor",
+        "subCategory": ["Carpentry"]
+    },
+    {
+        "id": 7,
+        "name": "Lian Hin Pte Ltd",
+        "logoUrl": "",
+        "address": "204 Woodlands Industrial Park E9, Woodlands",
+        "contact": "98800943",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Supplier",
+        "subCategory": ["Counter Tops"]
+    },
+    {
+        "id": 8,
+        "name": "MCL Flooring & Doors Pte Ltd",
+        "logoUrl": "",
+        "address": "560 Yishun Avenue 6, Lilydale, Singapore",
+        "contact": "SALES@MCLFLO",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Contractor",
+        "subCategory": ["Floorings", "Doors"]
+    },
+    {
+        "id": 9,
+        "name": "Sparkle Cleaning Pte Ltd",
+        "logoUrl": "",
+        "address": "39 Jalan Pemimpin, Tailee Industrial Building",
+        "contact": "98506131",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Contractor",
+        "subCategory": ["Cleaner"]
+    },
+    {
+        "id": 10,
+        "name": "T&C Plus Pte Ltd",
+        "logoUrl": "",
+        "address": "140C Corporation Drive, Yung Ho Spring I",
+        "contact": "86722936",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Contractor",
+        "subCategory": ["Partition", "Ceiling"]
+    },
+    {
+        "id": 11,
+        "name": "Totaland Building Products Pte Ltd",
+        "logoUrl": "",
+        "address": "28 Kranji Loop, Singapore 739571, #04-06",
+        "contact": "88130088",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Supplier",
+        "subCategory": ["Building Materials"]
+    },
+    {
+        "id": 12,
+        "name": "Wasser Bath Pte Ltd",
+        "logoUrl": "",
+        "address": "467 Balestier Road, Singapore 329840",
+        "contact": "83330302",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Supplier",
+        "subCategory": ["Bathrooms", "Lightings"]
+    },
+    {
+        "id": 13,
+        "name": "Xing Tek Flooring Pte Ltd",
+        "logoUrl": "",
+        "address": "1 Tampines North Drive 1, T-Space, Singapore",
+        "contact": "89486246",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Contractor",
+        "subCategory": ["Flooring"]
+    },
+    {
+        "id": 14,
+        "name": "Big Blue Trunk",
+        "logoUrl": "",
+        "address": "",
+        "contact": "hello@bigbluetrunk",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Supplier",
+        "subCategory": ["Paints"]
+    },
+    {
+        "id": 15,
+        "name": "Hafary Pte Ltd",
+        "logoUrl": "",
+        "address": "105 Eunos Avenue 3, Hafary Centre, Singapore",
+        "contact": "94505066",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Supplier",
+        "subCategory": ["Tiles"]
+    },
+    {
+        "id": 16,
+        "name": "Infinite Aircon Pte Ltd",
+        "logoUrl": "",
+        "address": "",
+        "contact": "88700738",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Contractor",
+        "subCategory": ["Aircon"]
+    },
+    {
+        "id": 17,
+        "name": "KHS Windows & Renovation",
+        "logoUrl": "",
+        "address": "7 Yishun Industrial Street 1, North Spring",
+        "contact": "94892025",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Supplier",
+        "subCategory": ["Doors", "Windows"]
+    },
+    {
+        "id": 18,
+        "name": "M Aluminium & Glass Pte Ltd",
+        "logoUrl": "",
+        "address": "10 Admiralty Street, North Link Building, #03-",
+        "contact": "98514223",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Supplier",
+        "subCategory": ["Aluminium", "Glass"]
+    },
+    {
+        "id": 19,
+        "name": "UNTOLDSTR",
+        "logoUrl": "",
+        "address": "135 Joo Chiat Place, 427867",
+        "contact": "88757929",
+        "memberSince": "",
+        "bio": "",
+        "projects": "",
+        "category": "Supplier",
+        "subCategory": ["Door Handles"]
+    }
 ]
