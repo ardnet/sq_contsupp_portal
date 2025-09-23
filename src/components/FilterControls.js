@@ -75,25 +75,22 @@ export default function FilterControls({ allPartners, filters, setFilters, onFil
       </div>
 
       {/* --- NEW: Dynamic Sub-Category Checkboxes --- */}
-      {filters.category !== 'All' && (
-        <div className={styles.filterSection}>
-          <h4>{filters.category} Sub-Categories</h4>
-          <div className={styles.specialtyFilters}>
-          {subCategoriesToShow.map(subCat => (
-            <label key={subCat} className={styles.checkboxLabel}>
-              <input
-                type="checkbox"
-                value={subCat}
-                onChange={handleSubCategoryChange}
-                checked={filters.subCategories.includes(subCat)}
-              />
-              {subCat}
-            </label>
-          ))}
-          </div>
+      <div className={styles.filterSection}>
+        <h4>{filters.category} Sub-Categories</h4>
+        <div className={styles.specialtyFilters}>
+        {subCategoriesToShow.map(subCat => (
+          <label key={subCat} className={styles.checkboxLabel}>
+            <input
+              type="checkbox"
+              value={subCat}
+              onChange={handleSubCategoryChange}
+              checked={filters.subCategories.includes(subCat)}
+            />
+            {subCat}
+          </label>
+        ))}
         </div>
-      )}
-
+      </div>
     </div>
   );
 }
