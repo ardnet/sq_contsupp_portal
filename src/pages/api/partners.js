@@ -26,8 +26,6 @@ export default async function handler(req, res) {
     const publicData = partners.map(partner => ({
       id: partner.id,
       name: partner.name,
-      specialty: partner.specialty,
-      specialty: partner.specialty,
       category: partner.category,       // <-- ADD THIS
       subCategory: partner.subCategory, // <-- ADD THIS
     }));

@@ -8,12 +8,6 @@ const subCategoryMap = {
 };
 
 export default function FilterControls({ allPartners, filters, setFilters, onFilterChange }) {
-  // Get a unique, sorted list of specialties for the checkboxes
-  const uniqueSpecialties = useMemo(() => {
-    const specialties = new Set(allPartners.map(p => p.specialty));
-    return Array.from(specialties).sort();
-  }, [allPartners]);
-
   // --- UPDATED: Handlers for new filters ---
   const handleCategoryChange = (e) => {
     const { value } = e.target;
@@ -39,16 +33,10 @@ export default function FilterControls({ allPartners, filters, setFilters, onFil
     onFilterChange();
   };
 
-  // Handler for checkbox changes
-  const handleSpecialtyChange = (e) => {
-    const { value, checked } = e.target;
-    const currentSpecialties = filters.specialties;
-    const newSpecialties = checked
-      ? [...currentSpecialties, value]
-      : currentSpecialties.filter(s => s !== value);
-    setFilters(prev => ({ ...prev, specialties: newSpecialties }));
-    onFilterChange();
-  };
+   // Determine which list of sub-categories to show
+  const subCategoriesToShow = filters.category === 'All' 
+    ? allUniqueSubCategories 
+    : subCategoryMap[filters.category];
 
   return (
     <div className={styles.filters}>
@@ -86,34 +74,21 @@ export default function FilterControls({ allPartners, filters, setFilters, onFil
         <div className={styles.filterSection}>
           <h4>{filters.category} Sub-Categories</h4>
           <div className={styles.specialtyFilters}>
-            {subCategoryMap[filters.category].map(subCat => (
-              <label key={subCat} className={styles.checkboxLabel}>
-                <input
-                  type="checkbox"
-                  value={subCat}
-                  onChange={handleSubCategoryChange}
-                  checked={filters.subCategories.includes(subCat)}
-                />
-                {subCat}
-              </label>
-            ))}
+          {subCategoriesToShow.map(subCat => (
+            <label key={subCat} className={styles.checkboxLabel}>
+              <input
+                type="checkbox"
+                value={subCat}
+                onChange={handleSubCategoryChange}
+                checked={filters.subCategories.includes(subCat)}
+              />
+              {subCat}
+            </label>
+          ))}
           </div>
         </div>
       )}
 
-      <div className={styles.specialtyFilters}>
-        {uniqueSpecialties.map(specialty => (
-          <label key={specialty} className={styles.checkboxLabel}>
-            <input
-              type="checkbox"
-              value={specialty}
-              onChange={handleSpecialtyChange}
-              checked={filters.specialties.includes(specialty)}
-            />
-            {specialty}
-          </label>
-        ))}
-      </div>
     </div>
   );
 }

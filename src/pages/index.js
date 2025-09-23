@@ -25,7 +25,6 @@ export default function Home() {
     name: '',
     address: '',
     contact: '',
-    specialties: [],
     category: 'All', // Default to 'All'
     subCategories: [],
   });
@@ -64,14 +63,13 @@ export default function Home() {
       const nameMatch = (partner.name || '').toLowerCase().includes(name.toLowerCase());
       const addressMatch = (partner.address || '').toLowerCase().includes(address.toLowerCase());
       const contactMatch = (partner.contact || '').includes(contact);
-      const specialtyMatch = specialties.length === 0 || specialties.includes(partner.specialty);
       
       // --- NEW: Add category and sub-category matching logic ---
       const categoryMatch = category === 'All' || partner.category === category;
       const subCategoryMatch = subCategories.length === 0 || 
         subCategories.some(sc => partner.subCategory.includes(sc));
       
-      return nameMatch && addressMatch && contactMatch && specialtyMatch && categoryMatch && subCategoryMatch;
+      return nameMatch && addressMatch && contactMatch && categoryMatch && subCategoryMatch;
     });
   }, [filters, allPartners]);
 
