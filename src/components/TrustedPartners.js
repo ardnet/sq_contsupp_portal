@@ -37,7 +37,7 @@ export default function TrustedPartners({ isLoggedIn, onAuthRequired }) {
     if (isLoggedIn) {
       return (
         <Link href={`/trusted-partners/${partnerId}`} {...commonProps}>
-          View Details
+          More details
         </Link>
       );
     }

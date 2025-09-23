@@ -4,13 +4,13 @@ import styles from '../styles/Home.module.css';
 export default function PartnerCard({ partner, isLoggedIn, onAuthRequired }) {
   const DetailLink = () => (
     <Link href={`/partners/${partner.id}`} className={styles.detailLink}>
-      More detail
+      More details
     </Link>
   );
 
   const AuthRequiredButton = () => (
     <button onClick={onAuthRequired} className={styles.detailLink}>
-      Login for more detail
+      Login for details
     </button>
   );
 
