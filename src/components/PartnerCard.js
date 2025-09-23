@@ -24,7 +24,7 @@ export default function PartnerCard({ partner, isLoggedIn, onAuthRequired }) {
       {partner.contact && <p><strong>Contact:</strong> {partner.contact}</p>}
       
       <p><strong>Category:</strong> {partner.category}</p>
-      <p><strong>Sub-Category:</strong> {partner.subCategory}</p>
+      <p><strong>Sub-Categories:</strong> {partner.subCategory.join(', ')}</p>
       
       {isLoggedIn ? <DetailLink /> : <AuthRequiredButton />}
     </div>
