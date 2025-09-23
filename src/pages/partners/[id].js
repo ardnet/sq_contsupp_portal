@@ -20,7 +20,7 @@ export default function PartnerDetail() {
     if (status === 'authenticated' && id) {
       const fetchPartnerData = async () => {
         try {
-          const response = await fetch('/data/partners.json');
+          const response = await fetch('/api/partners');
           if (!response.ok) throw new Error('Could not fetch partner data.');
           const allPartners = await response.json();
           
