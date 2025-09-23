@@ -7,7 +7,7 @@
         "contact": "90703143",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Contractor",
         "subCategory": ["Electrical", "Plumbing"]
     },
@@ -19,7 +19,7 @@
         "contact": "90682238",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Contractor",
         "subCategory": ["Plumbing"]
     },
@@ -31,7 +31,7 @@
         "contact": "81892066, Jade",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Supplier",
         "subCategory": ["Paints"]
     },
@@ -43,7 +43,7 @@
         "contact": "94233739",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Contractor",
         "subCategory": ["Masonry Works"]
     },
@@ -55,7 +55,7 @@
         "contact": "85060468",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Contractor",
         "subCategory": ["Electrical", "Plumbing"]
     },
@@ -67,7 +67,7 @@
         "contact": "+60 18776 8723",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Contractor",
         "subCategory": ["Carpentry"]
     },
@@ -79,7 +79,7 @@
         "contact": "98800943",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Supplier",
         "subCategory": ["Counter Tops"]
     },
@@ -91,7 +91,7 @@
         "contact": "SALES@MCLFLO",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Contractor",
         "subCategory": ["Floorings", "Doors"]
     },
@@ -103,7 +103,7 @@
         "contact": "98506131",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Contractor",
         "subCategory": ["Cleaner"]
     },
@@ -115,7 +115,7 @@
         "contact": "86722936",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Contractor",
         "subCategory": ["Partition", "Ceiling"]
     },
@@ -127,7 +127,7 @@
         "contact": "88130088",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Supplier",
         "subCategory": ["Building Materials"]
     },
@@ -139,7 +139,7 @@
         "contact": "83330302",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Supplier",
         "subCategory": ["Bathrooms", "Lightings"]
     },
@@ -151,7 +151,7 @@
         "contact": "89486246",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Contractor",
         "subCategory": ["Flooring"]
     },
@@ -163,7 +163,7 @@
         "contact": "hello@bigbluetrunk",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Supplier",
         "subCategory": ["Paints"]
     },
@@ -175,7 +175,7 @@
         "contact": "94505066",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Supplier",
         "subCategory": ["Tiles"]
     },
@@ -187,7 +187,7 @@
         "contact": "88700738",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Contractor",
         "subCategory": ["Aircon"]
     },
@@ -199,7 +199,7 @@
         "contact": "94892025",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Supplier",
         "subCategory": ["Doors", "Windows"]
     },
@@ -211,7 +211,7 @@
         "contact": "98514223",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Supplier",
         "subCategory": ["Aluminium", "Glass"]
     },
@@ -223,7 +223,7 @@
         "contact": "88757929",
         "memberSince": "",
         "bio": "",
-        "projects": "",
+        "projects": [],
         "category": "Supplier",
         "subCategory": ["Door Handles"]
     }
