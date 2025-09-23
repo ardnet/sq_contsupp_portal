@@ -82,7 +82,9 @@ export default function PartnerDetail() {
             <h3>Contact Information</h3>
             <p><strong>Address:</strong> {partner.address}</p>
             <p><strong>Contact:</strong> {partner.contact}</p>
-            <p><strong>Partner Since:</strong> {new Date(partner.memberSince).toLocaleDateString()}</p>
+            {partner.memberSince && (
+              <p><strong>Partner Since:</strong> {new Date(partner.memberSince).toLocaleDateString()}</p>
+            )}
             <p><strong>Category:</strong> {partner.category}</p>
             <p><strong>Sub-Categories:</strong> {(partner.subCategory || []).join(', ')}</p>
           </div>

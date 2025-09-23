@@ -97,7 +97,9 @@ export default function TrustedPartnerDetail() {
           <p><strong>Category:</strong> {partner.category}</p>
           <p><strong>Sub-Categories:</strong> {(partner.subCategory || []).join(', ')}</p>
 
-          <p><strong>Partner Since:</strong> {new Date(partner.memberSince).toLocaleDateString()}</p>
+          {partner.memberSince && (
+            <p><strong>Partner Since:</strong> {new Date(partner.memberSince).toLocaleDateString()}</p>
+          )}
         </div>
 
         {/* --- Projects Section (maps over the array) --- */}
