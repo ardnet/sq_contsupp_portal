@@ -8,6 +8,12 @@ const subCategoryMap = {
 };
 
 export default function FilterControls({ allPartners, filters, setFilters, onFilterChange }) {
+  const allPossibleSubCategories = useMemo(() => {
+    const combined = [...subCategoryMap.Contractor, ...subCategoryMap.Supplier];
+    // Use a Set to get unique values, then convert back to an array and sort
+    return Array.from(new Set(combined)).sort();
+  }, []); // Empty dependency array because our map is static
+
   // --- UPDATED: Handlers for new filters ---
    const allUniqueSubCategories = useMemo(() => {
     const allSubCats = allPartners.flatMap(p => p.subCategory);
@@ -38,9 +44,9 @@ export default function FilterControls({ allPartners, filters, setFilters, onFil
     onFilterChange();
   };
 
-   // Determine which list of sub-categories to show
+   // --- UPDATED: This logic now uses the correct list for the "All" case ---
   const subCategoriesToShow = filters.category === 'All' 
-    ? allUniqueSubCategories 
+    ? allPossibleSubCategories // Use the new combined list
     : subCategoryMap[filters.category];
 
   return (
@@ -74,21 +80,23 @@ export default function FilterControls({ allPartners, filters, setFilters, onFil
         </div>
       </div>
 
-      {/* --- NEW: Dynamic Sub-Category Checkboxes --- */}
       <div className={styles.filterSection}>
-        <h4>{filters.category} Sub-Categories</h4>
+        <h4>
+          {/* Dynamically change the title */}
+          {filters.category === 'All' ? 'All Sub-Categories' : `${filters.category} Sub-Categories`}
+        </h4>
         <div className={styles.specialtyFilters}>
-        {subCategoriesToShow.map(subCat => (
-          <label key={subCat} className={styles.checkboxLabel}>
-            <input
-              type="checkbox"
-              value={subCat}
-              onChange={handleSubCategoryChange}
-              checked={filters.subCategories.includes(subCat)}
-            />
-            {subCat}
-          </label>
-        ))}
+          {subCategoriesToShow.map(subCat => (
+            <label key={subCat} className={styles.checkboxLabel}>
+              <input
+                type="checkbox"
+                value={subCat}
+                onChange={handleSubCategoryChange}
+                checked={filters.subCategories.includes(subCat)}
+              />
+              {subCat}
+            </label>
+          ))}
         </div>
       </div>
     </div>
