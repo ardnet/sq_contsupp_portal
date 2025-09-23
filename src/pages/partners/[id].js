@@ -71,7 +71,6 @@ export default function PartnerDetail() {
         <div className={styles.detailContainer}>
           <div className={styles.detailHeader}>
             <h1>{partner.name}</h1>
-            <p className={styles.detailSpecialty}>{partner.specialty}</p>
           </div>
           
           <div className={styles.detailSection}>
