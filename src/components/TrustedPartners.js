@@ -43,7 +43,7 @@ export default function TrustedPartners({ isLoggedIn, onAuthRequired }) {
     }
     return (
       <button onClick={onAuthRequired} {...commonProps}>
-        Login for Details
+        Login for details
       </button>
     );
   };

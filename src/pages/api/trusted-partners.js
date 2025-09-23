@@ -17,6 +17,8 @@ export default async function handler(req, res) {
       id: partner.id,
       name: partner.name,
       logoUrl: partner.logoUrl,
+      category: partner.category,       // <-- Add this
+      subCategory: partner.subCategory, // <-- Add this
       // All other sensitive fields are left out
     }));
     res.status(200).json(publicData);
