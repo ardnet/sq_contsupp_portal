@@ -13,7 +13,7 @@ export default function Header() {
         <Link href="/" className={styles.logo}>
           {/* --- ADD THE LOGO IMAGE HERE --- */}
           <Image
-            src="/logo.png" // The path to your logo in the public folder
+            src="/logogreen.png" // The path to your logo in the public folder
             alt="SQUARISH Logo"
             width={35} // Adjust the width as needed
             height={35} // Adjust the height as needed
