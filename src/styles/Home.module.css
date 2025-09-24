@@ -61,9 +61,9 @@
   display: none;
 }
 .checkboxLabel:has(input:checked) {
-  background-color: #3498db;
+  background-color: #405C34;
   color: white;
-  border-color: #3498db;
+  border-color: #405C34;
 }
 .checkboxLabel:hover {
   background-color: #ecf0f1;
@@ -91,7 +91,7 @@
 }
 .partnerCard h3 {
   margin-top: 0;
-  color: #3498db;
+  color: #405C34;
   font-size: 1.25rem;
 }
 .partnerCard p {
@@ -100,7 +100,7 @@
   line-height: 1.5;
 }
 .partnerCard strong {
-  color: #555;
+  color: #405C34;
 }
 
 /* --- Status & Load More --- */
@@ -120,7 +120,7 @@
 .loadMoreBtn {
   padding: 12px 25px;
   font-size: 16px;
-  background-color: #3498db;
+  background-color: #405C34;
   color: white;
   border: none;
   border-radius: 5px;
@@ -183,14 +183,14 @@
 
 .detailSection h3 {
   font-size: 1.5rem;
-  color: #3498db;
+  color: #405C34;
   margin-bottom: 1rem;
 }
 
 .detailSection p, .detailSection li {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #34495e;
+  color: #405C34;
 }
 
 .detailSection ul {
@@ -200,7 +200,7 @@
 
 .backLink {
   font-size: 1.1rem;
-  color: #3498db;
+  color: #405C34;
   text-decoration: none;
   font-weight: 500;
 }
@@ -258,7 +258,7 @@
   color: #777;
 }
 .legalLinks a {
-  color: #555;
+  color: #405C34;
   margin: 0 5px;
 }
 
@@ -272,7 +272,7 @@
 
 .trustedPartnersSection h2 {
   font-size: 2rem;
-  color: #34495e;
+  color: #405C34;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -345,7 +345,7 @@
 /* Title for the main list */
 .allPartnersTitle {
   font-size: 2rem;
-  color: #34495e;
+  color: #405C34;
   margin-bottom: 1.5rem;
 }
 
