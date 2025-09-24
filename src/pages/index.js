@@ -81,7 +81,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>SQUARISH! Partner Portal</title>
+        <title>SQUARISH! Partners Portal</title>
         <meta name="description" content="A portal for SQUARISH! suppliers and contractors" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
@@ -90,7 +90,7 @@ export default function Home() {
       <LoginModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
       <main className={styles.main}>
-        <h1 className={styles.title}>SQUARISH! Partner Portal</h1>
+        <h1 className={styles.title}>SQUARISH! Partners Portal</h1>
 
         {/* --- ADD THE NEW COMPONENT HERE --- */}
         <TrustedPartners 
@@ -98,7 +98,7 @@ export default function Home() {
           onAuthRequired={() => setIsModalOpen(true)} 
         />
 
-        <h2 className={styles.allPartnersTitle}>All Partners</h2>
+        <h2 className={styles.allPartnersTitle}>All Other Partners</h2>
         <FilterControls
           allPartners={allPartners}
           filters={filters}

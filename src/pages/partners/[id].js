@@ -86,7 +86,7 @@ export default function PartnerDetail() {
               <p><strong>Partner Since:</strong> {new Date(partner.memberSince).toLocaleDateString()}</p>
             )}
             <p><strong>Category:</strong> {partner.category}</p>
-            <p><strong>Sub-Categories:</strong> {(partner.subCategory || []).join(', ')}</p>
+            <p><strong>Specialties:</strong> {(partner.subCategory || []).join(', ')}</p>
           </div>
 
           <div className={styles.detailSection}>

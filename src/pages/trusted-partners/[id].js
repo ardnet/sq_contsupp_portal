@@ -95,7 +95,7 @@ export default function TrustedPartnerDetail() {
           <p><strong>Contact:</strong> {partner.contact}</p>
           {/* --- ADD THESE TWO LINES --- */}
           <p><strong>Category:</strong> {partner.category}</p>
-          <p><strong>Sub-Categories:</strong> {(partner.subCategory || []).join(', ')}</p>
+          <p><strong>Specialties:</strong> {(partner.subCategory || []).join(', ')}</p>
 
           {partner.memberSince && (
             <p><strong>Partner Since:</strong> {new Date(partner.memberSince).toLocaleDateString()}</p>

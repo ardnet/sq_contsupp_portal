@@ -98,7 +98,7 @@ export default function FilterControls({ allPartners, filters, setFilters, onFil
 
       <div className={styles.filterSection}>
         <h4>
-          {filters.category === 'All' ? 'All Sub-Categories' : `${filters.category} Sub-Categories`}
+          {filters.category === 'All' ? 'All Specialties' : `${filters.category} Specialties`}
         </h4>
         <div className={styles.specialtyFilters}>
           {subCategoriesToShow.map(subCat => (
