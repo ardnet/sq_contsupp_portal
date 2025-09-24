@@ -142,3 +142,31 @@
 /* .logo span { */
   /* You can add specific styles for the text here if you want */
 /* } */
+
+/* --- Header Styles --- */
+.header {
+  background: var(--white);
+  border-bottom: 1px solid var(--border-color);
+  /* ... other styles */
+}
+.logo {
+  color: var(--dark-charcoal);
+  /* ... other styles */
+}
+.authButton {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  /* ... other styles */
+}
+.authButton:hover {
+  opacity: 0.9;
+}
+
+/* --- Footer Styles --- */
+.footer {
+  background: var(--white);
+  border-top: 1px solid var(--border-color);
+}
+.footer p {
+  color: var(--medium-gray);
+}

@@ -435,3 +435,53 @@
     display: none;
   }
 }
+
+/* --- Title --- */
+.title {
+  color: var(--dark-charcoal);
+}
+
+/* --- Buttons --- */
+.loadMoreBtn, .googleButton {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+.loadMoreBtn:hover, .googleButton:hover {
+  opacity: 0.9;
+}
+
+/* --- Cards --- */
+.partnerCard, .trustedPartnerCard {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+}
+.partnerCard h3, .trustedPartnerCard h3 {
+  color: var(--primary-blue);
+}
+.partnerCard strong, .trustedPartnerCard strong {
+  color: var(--dark-charcoal);
+}
+
+/* --- Links --- */
+.detailLink, .backLink {
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+.detailLink {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+.detailLink:hover, .backLink:hover {
+  text-decoration: underline;
+}
+
+/* --- Filter Styles --- */
+.filterSection h4 {
+  color: var(--dark-charcoal);
+}
+.checkboxLabel:has(input:checked), .radioLabel:has(input:checked) {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border-color: var(--primary-blue);
+}
