@@ -1,14 +1,4 @@
-:root {
-  --primary-blue: #007bff;
-  --dark-charcoal: #2c3e50;
-  --medium-gray: #7f8c8d;
-  --light-gray-bg: #f4f7f9;
-  --white: #ffffff;
-  --border-color: #e0e0e0;
-}
-
 body {
-  background-color: var(--light-gray-bg);
-  color: var(--dark-charcoal);
-  /* The Jost font from the previous step will be inherited */
+    /* font-family: Jost, Arial, sans-serif; */
+    margin: auto
 }
