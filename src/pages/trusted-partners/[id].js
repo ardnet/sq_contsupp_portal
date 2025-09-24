@@ -111,7 +111,7 @@ export default function TrustedPartnerDetail() {
         </div>
 
         <Link href="/" className={styles.backLink}>
-          &larr; Back to Partner List
+          &larr; Back to Homepage
         </Link>
       </div>
     </div>

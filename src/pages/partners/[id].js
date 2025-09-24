@@ -97,7 +97,7 @@ export default function PartnerDetail() {
           </div>
 
           <Link href="/" className={styles.backLink}>
-            &larr; Back to Partner List
+            &larr; Back to Homepage
           </Link>
         </div>
       </main>

@@ -1,5 +1,6 @@
 import { useSession, signIn, signOut } from 'next-auth/react';
 import Link from 'next/link';
+import Image from 'next/image'; // Import the Image component
 import styles from '../styles/Layout.module.css';
 
 export default function Header() {
@@ -10,7 +11,14 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.headerContent}>
         <Link href="/" className={styles.logo}>
-          SQUARISH Portal
+          {/* --- ADD THE LOGO IMAGE HERE --- */}
+          <Image
+            src="/logo.png" // The path to your logo in the public folder
+            alt="SQUARISH Logo"
+            width={35} // Adjust the width as needed
+            height={35} // Adjust the height as needed
+          />
+          <span>SQUARISH! Partners Portal</span>
         </Link>
         <div className={styles.authSection}>
           {isLoading ? (
