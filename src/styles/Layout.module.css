@@ -108,3 +108,21 @@
   gap: 0.5rem;
   cursor: pointer;
 }
+
+/* --- Add to the end of your file --- */
+.footerLinks {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerLinks a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
+}
