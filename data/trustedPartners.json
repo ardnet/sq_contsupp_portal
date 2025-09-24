@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "CS Electrical&Plumbing Services",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "82 Bedok North Road, #09-308, Singapore",
         "contact": "90703143",
         "memberSince": "",
@@ -14,7 +14,7 @@
     {
         "id": 2,
         "name": "DH Hardware Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "7 Gambas Crescent, Ark@Gambas, #04-05",
         "contact": "90682238",
         "memberSince": "",
@@ -26,7 +26,7 @@
     {
         "id": 3,
         "name": "GUSH",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "BCA Academy, 200 Braddell Roaad, Block B",
         "contact": "81892066, Jade",
         "memberSince": "",
@@ -38,7 +38,7 @@
     {
         "id": 4,
         "name": "JHome Design & Reno Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "216 Yishun Street 21, #04-315, Singapore",
         "contact": "94233739",
         "memberSince": "",
@@ -50,7 +50,7 @@
     {
         "id": 5,
         "name": "Kailai Maintenance And Services Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "200 Jalan Sultan, Textile Centre, Singapore",
         "contact": "85060468",
         "memberSince": "",
@@ -62,7 +62,7 @@
     {
         "id": 6,
         "name": "LCY Design & Renovation",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "Lot 1001137-01 Jalan Ban Foo, Ulu Tiram",
         "contact": "+60 18776 8723",
         "memberSince": "",
@@ -74,7 +74,7 @@
     {
         "id": 7,
         "name": "Lian Hin Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "204 Woodlands Industrial Park E9, Woodlands",
         "contact": "98800943",
         "memberSince": "",
@@ -86,7 +86,7 @@
     {
         "id": 8,
         "name": "MCL Flooring & Doors Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "560 Yishun Avenue 6, Lilydale, Singapore",
         "contact": "SALES@MCLFLO",
         "memberSince": "",
@@ -98,7 +98,7 @@
     {
         "id": 9,
         "name": "Sparkle Cleaning Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "39 Jalan Pemimpin, Tailee Industrial Building",
         "contact": "98506131",
         "memberSince": "",
@@ -110,7 +110,7 @@
     {
         "id": 10,
         "name": "T&C Plus Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "140C Corporation Drive, Yung Ho Spring I",
         "contact": "86722936",
         "memberSince": "",
@@ -122,7 +122,7 @@
     {
         "id": 11,
         "name": "Totaland Building Products Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "28 Kranji Loop, Singapore 739571, #04-06",
         "contact": "88130088",
         "memberSince": "",
@@ -134,7 +134,7 @@
     {
         "id": 12,
         "name": "Wasser Bath Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "467 Balestier Road, Singapore 329840",
         "contact": "83330302",
         "memberSince": "",
@@ -146,7 +146,7 @@
     {
         "id": 13,
         "name": "Xing Tek Flooring Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "1 Tampines North Drive 1, T-Space, Singapore",
         "contact": "89486246",
         "memberSince": "",
@@ -158,7 +158,7 @@
     {
         "id": 14,
         "name": "Big Blue Trunk",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "",
         "contact": "hello@bigbluetrunk",
         "memberSince": "",
@@ -170,7 +170,7 @@
     {
         "id": 15,
         "name": "Hafary Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "105 Eunos Avenue 3, Hafary Centre, Singapore",
         "contact": "94505066",
         "memberSince": "",
@@ -182,7 +182,7 @@
     {
         "id": 16,
         "name": "Infinite Aircon Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "",
         "contact": "88700738",
         "memberSince": "",
@@ -194,7 +194,7 @@
     {
         "id": 17,
         "name": "KHS Windows & Renovation",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "7 Yishun Industrial Street 1, North Spring",
         "contact": "94892025",
         "memberSince": "",
@@ -206,7 +206,7 @@
     {
         "id": 18,
         "name": "M Aluminium & Glass Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "10 Admiralty Street, North Link Building, #03-",
         "contact": "98514223",
         "memberSince": "",
@@ -218,7 +218,7 @@
     {
         "id": 19,
         "name": "UNTOLDSTR",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "135 Joo Chiat Place, 427867",
         "contact": "88757929",
         "memberSince": "",

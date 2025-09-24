@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "A&F Design Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "11 Sin Ming Road, Thomson V Two, Singapore 575629, #01-20, Singapore, 575629",
         "contact": "91002106",
         "memberSince": "",
@@ -14,7 +14,7 @@
     {
         "id": 2,
         "name": "Esperto Contractors Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "82 Lorong 23 Geylang, Atrix, Singapore 388409, #03-02, Singapore, 388409",
         "contact": "97887113",
         "memberSince": "",
@@ -26,7 +26,7 @@
     {
         "id": 3,
         "name": "JC Construction Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "7 Mandai Link, Mandai Connection, Singapore 728653, Singapore, 728653",
         "contact": "97637071",
         "memberSince": "",
@@ -38,7 +38,7 @@
     {
         "id": 4,
         "name": "Apex Signages Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "10 Kaki Bukit Avenue 4, Premier @ Kaki Bukit, #06-62, Singapore, 41587410 Kaki Bukit Avenue 4, Premier @ Kaki Bukit, #06-62, Singapore, 415874",
         "contact": "sales@apexsignages.com",
         "memberSince": "",
@@ -50,7 +50,7 @@
     {
         "id": 5,
         "name": "Artitech Interior Studio Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "6 Harper Road, Leong Huat Building, Singapore 369674, #02-07, Singapore, 3696746 Harper Road, Leong Huat Building, Singapore 369674, #02-07, Singapore, 369674",
         "contact": "80763203, 80763200",
         "memberSince": "",
@@ -62,7 +62,7 @@
     {
         "id": 6,
         "name": "Series Supplies (S) Pte Ltd",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "37 Tannery Lane, Tannery House, Singapore 347790, #04-07, Singapore, 347790",
         "contact": "82632968",
         "memberSince": "",
@@ -74,7 +74,7 @@
     {
         "id": 7,
         "name": "Siong Door",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "1072 Eunos Avenue 5, Eunos Industrial Estate, #01-170, Singapore, 409751",
         "contact": "96370226, sales@siongdoor.sg",
         "memberSince": "",
@@ -86,7 +86,7 @@
     {
         "id": 8,
         "name": "Tat Ming",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "61 Ubi Road 1, Oxley Bizhub, #01-37, Singapore, 408727",
         "contact": "81256223",
         "memberSince": "",
@@ -98,7 +98,7 @@
     {
         "id": 9,
         "name": "VERY9",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "10 Admiralty Street, North Link Building, #02-74, Singapore, 757695",
         "contact": "81571910, very9@singnet.com.sg",
         "memberSince": "",
@@ -110,7 +110,7 @@
     {
         "id": 10,
         "name": "WOOD ORIGINS",
-        "logoUrl": "",
+        "logoUrl": "/dummy_logo.jpg",
         "address": "33 Ubi Avenue 3, #01-67, Singapore 408868 Hudson / Georger",
         "contact": "9039 8186, 8080 1384",
         "memberSince": "",
