@@ -69,7 +69,7 @@
   background-color: #ecf0f1;
 }
 .checkboxLabel:has(input:checked):hover {
-  background-color: #2980b9;
+  background-color: #3D3D31;
 }
 
 /* --- Partner List & Cards --- */
@@ -128,7 +128,7 @@
   transition: background-color 0.3s ease;
 }
 .loadMoreBtn:hover {
-  background-color: #2980b9;
+  background-color: #3D3D31;
 }
 
 /* --- Add to the end of your file --- */
