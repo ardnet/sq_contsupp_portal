@@ -11,7 +11,14 @@ export default function Footer() {
         <span>|</span>
         <Link href="/terms">Terms & Conditions</Link>
       </div>
-      <p>Copyright &copy; {currentYear} SQUARISH. All Rights Reserved.</p>
+      <p>Copyright &copy; {currentYear} <a
+          href="https://squarish.com.sg"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.footerBrandLink}
+        >
+          SQUARISH
+        </a>. All Rights Reserved.</p>
     </footer>
   );
 }
