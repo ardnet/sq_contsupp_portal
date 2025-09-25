@@ -5,10 +5,11 @@ import styles from '../styles/Home.module.css'; // We'll reuse some styles
 export default function PrivacyPolicy() {
   return (
     <>
-      <Head>
-        <title>Privacy Policy - SQUARISH! Partners Portal</title>
-      </Head>
       <div className={styles.container}>
+        <Head>
+          <title>Privacy Policy - SQUARISH! Partners Portal</title>
+        </Head>
+        <main className={styles.main}>
         <div className={styles.detailContainer}>
           <h1>Privacy Policy</h1>
           <p><strong>Effective Date:</strong> September 25, 2025</p>
@@ -94,6 +95,7 @@ export default function PrivacyPolicy() {
             &larr; Back to Homepage
           </Link>
         </div>
+        </main>
       </div>
     </>
   );

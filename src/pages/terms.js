@@ -5,10 +5,11 @@ import styles from '../styles/Home.module.css'; // We'll reuse some styles
 export default function TermsAndConditions() {
   return (
     <>
-      <Head>
-        <title>Terms & Conditions - SQUARISH! Partners Portal</title>
-      </Head>
       <div className={styles.container}>
+        <Head>
+          <title>Terms & Conditions - SQUARISH! Partners Portal</title>
+        </Head>
+        <main className={styles.main}>
         <div className={styles.detailContainer}>
           <h1>Terms & Conditions</h1>
           <p><strong>Effective Date:</strong> September 25, 2025</p>
@@ -79,6 +80,7 @@ export default function TermsAndConditions() {
             &larr; Back to Homepage
           </Link>
         </div>
+        </main>
       </div>
     </>
   );

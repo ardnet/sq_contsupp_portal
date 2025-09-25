@@ -67,6 +67,7 @@ export default function TrustedPartnerDetail() {
         <title>{partner.name} - SQUARISH! Trusted Partner</title>
       </Head>
 
+      <main className={styles.main}>
       <div className={styles.detailContainer}>
         <div className={styles.detailHeader}>
           <Image 
@@ -114,6 +115,7 @@ export default function TrustedPartnerDetail() {
           &larr; Back to Homepage
         </Link>
       </div>
+      </main>
     </div>
   );
 }
