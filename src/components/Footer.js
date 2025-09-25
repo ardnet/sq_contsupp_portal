@@ -17,7 +17,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           className={styles.footerBrandLink}
         >
-          SQUARISH
+          SQUARISH!
         </a>. All Rights Reserved.</p>
     </footer>
   );

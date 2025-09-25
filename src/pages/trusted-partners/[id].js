@@ -64,7 +64,7 @@ export default function TrustedPartnerDetail() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{partner.name} - SQUARISH Trusted Partner</title>
+        <title>{partner.name} - SQUARISH! Trusted Partner</title>
       </Head>
 
       <div className={styles.detailContainer}>

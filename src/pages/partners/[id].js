@@ -64,7 +64,7 @@ export default function PartnerDetail() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{partner.name} - SQUARISH Partner Portal</title>
+        <title>{partner.name} - SQUARISH! Partners Portal</title>
       </Head>
 
       <main className={styles.main}>

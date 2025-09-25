@@ -14,7 +14,7 @@ export default function Header() {
           {/* --- ADD THE LOGO IMAGE HERE --- */}
           <Image
             src="/logogreen.png" // The path to your logo in the public folder
-            alt="SQUARISH Logo"
+            alt="SQUARISH! Logo"
             width={35} // Adjust the width as needed
             height={35} // Adjust the height as needed
           />

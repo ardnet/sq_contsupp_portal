@@ -13,7 +13,7 @@ export default function TermCondition() {
           <h1>Terms and Conditions</h1>
           <p>
             This document outlines how SQUARISH ("we," "us," or "our") collects, 
-            uses, and protects your information when you use the SQUARISH Partner Portal...
+            uses, and protects your information when you use the SQUARISH Partners Portal...
             {/* ...your full privacy policy text... */}
           </p>
           <Link href="/" className={styles.backLink}>
