@@ -20,8 +20,8 @@ export default function PartnerCard({ partner, isLoggedIn, onAuthRequired }) {
       
       {/* --- CONDITIONAL RENDERING --- */}
       {/* These <p> tags will only render if the data exists */}
-      {partner.address && <p><strong>Address:</strong> {partner.address}</p>}
-      {partner.contact && <p><strong>Contact:</strong> {partner.contact}</p>}
+      {/* {partner.address && <p><strong>Address:</strong> {partner.address}</p>}
+      {partner.contact && <p><strong>Contact:</strong> {partner.contact}</p>} */}
       
       <p><strong>Category:</strong> {partner.category}</p>
       <p><strong>Specialties:</strong> {(partner.subCategory || []).join(', ')}</p>
