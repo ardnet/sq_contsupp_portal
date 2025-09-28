@@ -26,7 +26,7 @@
     {
         "id": 3,
         "name": "GUSH",
-        "logoUrl": "/dummy_logo.jpg",
+        "logoUrl": "/gush_logo.jpg",
         "address": "BCA Academy, 200 Braddell Roaad, Block B, B2-1 (#02-09) Singapore 579700",
         "contact": "81892066, Jade Wang - jade@gush.earth, https://gush.earth",
         "memberSince": "",
@@ -134,7 +134,7 @@
     {
         "id": 12,
         "name": "Wasser Bath Pte Ltd",
-        "logoUrl": "/dummy_logo.jpg",
+        "logoUrl": "/wasserbath_logo.jpg",
         "address": "467 Balestier Road, Singapore 329840, Singapore, 329840",
         "contact": "83330302",
         "memberSince": "",
@@ -158,7 +158,7 @@
     {
         "id": 14,
         "name": "Big Blue Trunk",
-        "logoUrl": "/dummy_logo.jpg",
+        "logoUrl": "/bigbluetrunk_logo.jpg",
         "address": "",
         "contact": "hello@bigbluetrunk.sg",
         "memberSince": "",
@@ -170,7 +170,7 @@
     {
         "id": 15,
         "name": "Hafary Pte Ltd",
-        "logoUrl": "/dummy_logo.jpg",
+        "logoUrl": "/hafary_logo.jpg",
         "address": "105 Eunos Avenue 3, Hafary Centre, Singapore 409836, Singapore, 409836",
         "contact": "94505066",
         "memberSince": "",
@@ -182,7 +182,7 @@
     {
         "id": 16,
         "name": "Infinite Aircon Pte Ltd",
-        "logoUrl": "/dummy_logo.jpg",
+        "logoUrl": "/infinite_aircon.png",
         "address": "",
         "contact": "88700738, enquiry@infiniteac.com.sg",
         "memberSince": "",
