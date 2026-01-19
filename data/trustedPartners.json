@@ -48,18 +48,6 @@
         "subCategory": ["Masonry Works"]
     },
     {
-        "id": 5,
-        "name": "Kailai Maintenance And Services Pte Ltd",
-        "logoUrl": "/dummy_logo.jpg",
-        "address": "200 Jalan Sultan, Textile Centre, Singapore 199018, #03-17, Singapore, 199018",
-        "contact": "85060468",
-        "memberSince": "",
-        "bio": "",
-        "projects": [],
-        "category": "Contractor",
-        "subCategory": ["Electrical", "Plumbing", "Painting"]
-    },
-    {
         "id": 6,
         "name": "LCY Design & Renovation",
         "logoUrl": "/dummy_logo.jpg",
