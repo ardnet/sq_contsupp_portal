@@ -1,15 +1,15 @@
 [
     {
-        "id": 1,
-        "name": "CS Electrical & Plumbing Services",
-        "logoUrl": "/dummy_logo.jpg",
-        "address": "82 Bedok North Road, #09-308, Singapore",
-        "contact": "90703143",
+        "id": 3,
+        "name": "SteadyCoat",
+        "logoUrl": "/steadycoat_logo_circle2.png",
+        "address": "318 Tanglin Road, #01-49, Singapore 247979",
+        "contact": "+65 8973 3493",
         "memberSince": "",
-        "bio": "",
+        "bio": "Professional Painting Solutions for Your Home & Business. From initial prep to final stroke, we deliver reliable, high-quality, and streak-free finishes. Expert painting services for residential, commercial, and office spaces.",
         "projects": [],
         "category": "Contractor",
-        "subCategory": ["Electrical", "Plumbing"]
+        "subCategory": ["Paints"]
     },
     {
         "id": 2,
@@ -214,5 +214,17 @@
         "projects": [],
         "category": "Supplier",
         "subCategory": ["Door Handles"]
+    },
+    {
+        "id": 20,
+        "name": "CS Electrical & Plumbing Services",
+        "logoUrl": "/dummy_logo.jpg",
+        "address": "82 Bedok North Road, #09-308, Singapore",
+        "contact": "90703143",
+        "memberSince": "",
+        "bio": "",
+        "projects": [],
+        "category": "Contractor",
+        "subCategory": ["Electrical", "Plumbing"]
     }
 ]
