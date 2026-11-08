@@ -20,16 +20,16 @@ export default async function handler(req, res) {
   // The 'partners' variable now comes directly from the import above.
 
   // if (session) {
-  //   // If the user IS logged in, send the FULL data
-  //   res.status(200).json(partners);
+    // If the user IS logged in, send the FULL data
+    res.status(200).json(partners);
   // } else {
-    // If the user IS NOT logged in, send only the public data
-    const publicData = partners.map(partner => ({
-      id: partner.id,
-      name: partner.name,
-      category: partner.category,       // <-- ADD THIS
-      subCategory: partner.subCategory, // <-- ADD THIS
-    }));
-    res.status(200).json(publicData);
+  //   // If the user IS NOT logged in, send only the public data
+  //   const publicData = partners.map(partner => ({
+  //     id: partner.id,
+  //     name: partner.name,
+  //     category: partner.category,       // <-- ADD THIS
+  //     subCategory: partner.subCategory, // <-- ADD THIS
+  //   }));
+  //   res.status(200).json(publicData);
   // }
 }
