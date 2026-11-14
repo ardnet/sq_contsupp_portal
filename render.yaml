@@ -1,22 +1,10 @@
 services:
-- type: web
-  name: next-js
-  runtime: node
-  plan: starter
-  buildCommand: yarn; yarn build
-  startCommand: yarn start
-  autoDeploy: false
-  envVars:
-  - key: NODE_ENV
-    value: production
-# Uncomment the following to deploy this app as a static site on render
   - type: web
-    name: nextjs-static
+    name: sq-contsupp-portal
     runtime: static
-    buildCommand: yarn; yarn build
+    buildCommand: yarn install --frozen-lockfile && yarn build
     staticPublishPath: out
-    pullRequestPreviewsEnabled: true     # optional
+    autoDeployTrigger: off
     envVars:
-    - key: NODE_ENV
-      value: production
-
+      - key: NODE_ENV
+        value: production

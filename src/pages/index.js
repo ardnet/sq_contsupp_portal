@@ -1,23 +1,26 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import Head from 'next/head';
-import { useSession } from 'next-auth/react'; // Import useSession
 import styles from '../styles/Home.module.css';
 import PartnerCard from '../components/PartnerCard';
 import FilterControls from '../components/FilterControls';
-import LoginModal from '../components/LoginModal'; // Import the modal
 import TrustedPartners from '../components/TrustedPartners'; // Import the new component
+import partnersData from '../../data/partners.json';
+import trustedPartnersData from '../../data/trustedPartners.json';
 
 // The number of items to show per page
 const ITEMS_PER_PAGE = 6;
 
-export default function Home() {
-  const { data: session } = useSession(); // Get session status
-  const [isModalOpen, setIsModalOpen] = useState(false); // State for the modal
+// Data is read from data/*.json at build time and baked into the static HTML.
+export async function getStaticProps() {
+  return {
+    props: {
+      allPartners: partnersData,
+      trustedPartners: trustedPartnersData,
+    },
+  };
+}
 
-  // --- STATE MANAGEMENT ---
-  const [allPartners, setAllPartners] = useState([]); // Stores the original list from the API
-  const [isLoading, setIsLoading] = useState(true); // For the loading state
-  const [error, setError] = useState(null); // For any API errors
+export default function Home({ allPartners, trustedPartners }) {
   const [currentPage, setCurrentPage] = useState(1); // For pagination
 
   // --- UPDATED: Add new filter states ---
@@ -28,32 +31,6 @@ export default function Home() {
     category: 'All', // Default to 'All'
     subCategories: [],
   });
-
-  // --- DATA FETCHING ---
-  useEffect(() => {
-    // This async function fetches and transforms the data
-    const fetchPartners = async () => {
-      try {
-        // This is the only change required!
-        // const apiUrl = '/data/partners.json'; // Points to the file in the public folder
-        const apiUrl = '/api/partners'; // This now points to our secure API route
-        
-        const response = await fetch(apiUrl);
-        // if (!response.ok) throw new Error('Failed to fetch static data.');
-        if (!response.ok) throw new Error('Failed to fetch data from the API.');
-        
-        const partnersData = await response.json(); 
-        
-        setAllPartners(partnersData);
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchPartners();
-  }, []); // The empty array [] means this effect runs only once when the page loads
 
   // --- FILTERING LOGIC ---
   const filteredPartners = useMemo(() => {
@@ -67,7 +44,7 @@ export default function Home() {
       // --- NEW: Add category and sub-category matching logic ---
       const categoryMatch = category === 'All' || partner.category === category;
       const subCategoryMatch = subCategories.length === 0 || 
-        subCategories.some(sc => partner.subCategory.includes(sc));
+        subCategories.some(sc => (partner.subCategory || []).includes(sc));
       
       return nameMatch && addressMatch && contactMatch && categoryMatch && subCategoryMatch;
     });
@@ -86,17 +63,11 @@ export default function Home() {
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
 
-      {/* Conditionally render the LoginModal */}
-      <LoginModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-
       <main className={styles.main}>
         <h1 className={styles.title}>SQUARISH! Partners Portal</h1>
 
         {/* --- ADD THE NEW COMPONENT HERE --- */}
-        <TrustedPartners 
-          isLoggedIn={!!session} 
-          onAuthRequired={() => setIsModalOpen(true)} 
-        />
+        <TrustedPartners partners={trustedPartners} />
 
         <h2 className={styles.allPartnersTitle}>All Other Partners</h2>
         <FilterControls
@@ -106,19 +77,14 @@ export default function Home() {
           onFilterChange={() => setCurrentPage(1)} // Reset pagination on filter change
         />
 
-        {isLoading && <p className={styles.statusMessage}>Loading partners...</p>}
-        {error && <p className={`${styles.statusMessage} ${styles.error}`}>{error}</p>}
-        
-        {!isLoading && !error && (
-          <>
+        {filteredPartners.length === 0 && (
+          <p className={styles.statusMessage}>No partners match your filters.</p>
+        )}
+
+        <>
             <div className={styles.partnerList}>
               {partnersToShow.map(partner => (
-                <PartnerCard 
-                  key={partner.id} 
-                  partner={partner}
-                  isLoggedIn={!!session} // Pass login status
-                  onAuthRequired={() => setIsModalOpen(true)} // Pass function to open modal
-                />
+                <PartnerCard key={partner.id} partner={partner} />
               ))}
             </div>
 
@@ -129,10 +95,7 @@ export default function Home() {
                 </button>
               </div>
             )}
-
-
-          </>
-        )}
+        </>
       </main>
     </div>
   );

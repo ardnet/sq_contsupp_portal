@@ -1,17 +1,11 @@
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
-export default function PartnerCard({ partner, isLoggedIn, onAuthRequired }) {
+export default function PartnerCard({ partner }) {
   const DetailLink = () => (
     <Link href={`/partners/${partner.id}`} className={styles.detailLink}>
       More details
     </Link>
-  );
-
-  const AuthRequiredButton = () => (
-    <button onClick={onAuthRequired} className={styles.detailLink}>
-      Login for details
-    </button>
   );
 
   return (
@@ -26,7 +20,7 @@ export default function PartnerCard({ partner, isLoggedIn, onAuthRequired }) {
       <p><strong>Category:</strong> {partner.category}</p>
       <p><strong>Specialties:</strong> {(partner.subCategory || []).join(', ')}</p>
       
-      {isLoggedIn ? <DetailLink /> : <AuthRequiredButton />}
+      <DetailLink />
     </div>
   );
 }

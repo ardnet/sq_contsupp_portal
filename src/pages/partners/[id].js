@@ -1,66 +1,22 @@
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
-import { useSession } from 'next-auth/react'; // Import useSession
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
-import LoginModal from '../../components/LoginModal'; // Import the modal
+import partners from '../../../data/partners.json';
 
-export default function PartnerDetail() {
-  const { data: session, status } = useSession(); // Get session status
-  const router = useRouter();
-  const { id } = router.query; // Get the 'id' from the URL
+// Pre-render one page per partner at build time.
+export async function getStaticPaths() {
+  return {
+    paths: partners.map(p => ({ params: { id: String(p.id) } })),
+    fallback: false,
+  };
+}
 
-  const [partner, setPartner] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
+export async function getStaticProps({ params }) {
+  const partner = partners.find(p => String(p.id) === params.id);
+  return { props: { partner } };
+}
 
-  useEffect(() => {
-    // Only fetch data if the id is available in the router query
-    if (status === 'authenticated' && id) {
-      const fetchPartnerData = async () => {
-        try {
-          const response = await fetch('/api/partners');
-          if (!response.ok) throw new Error('Could not fetch partner data.');
-          const allPartners = await response.json();
-          
-          // Find the specific partner by its id
-          const currentPartner = allPartners.find(p => p.id.toString() === id);
-
-          if (currentPartner) {
-            setPartner(currentPartner);
-          } else {
-            throw new Error('Partner not found.');
-          }
-        } catch (err) {
-          setError(err.message);
-        } finally {
-          setIsLoading(false);
-        }
-      };
-
-      fetchPartnerData();
-    }
-  }, [id, status]); // This effect runs whenever the 'id' changes
-
-  // --- PROTECTION LOGIC ---
-  if (status === 'loading') {
-    return <div className={styles.statusMessage}>Loading...</div>;
-  }
-
-  if (status === 'unauthenticated') {
-    // If not logged in, show the LoginModal. No page content is rendered.
-    return <LoginModal isOpen={true} onClose={() => router.push('/')} />;
-  }
-
-  if (isLoading) {
-    return <div className={styles.statusMessage}>Loading partner details...</div>;
-  }
-
-  if (error) {
-    return <div className={`${styles.statusMessage} ${styles.error}`}>{error}</div>;
-  }
-
+export default function PartnerDetail({ partner }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -92,7 +48,7 @@ export default function PartnerDetail() {
           <div className={styles.detailSection}>
             <h3>Recent Projects</h3>
             <ul>
-              {partner.projects.map(project => <li key={project}>{project}</li>)}
+              {(partner.projects || []).map(project => <li key={project}>{project}</li>)}
             </ul>
           </div>
 

@@ -1,23 +1,12 @@
-import { useState, useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
 const ITEMS_PER_PAGE = 3; // Show 3 partners at a time
 
-export default function TrustedPartners({ isLoggedIn, onAuthRequired }) {
-  const [partners, setPartners] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+export default function TrustedPartners({ partners = [] }) {
   const scrollContainerRef = useRef(null); // Create a ref for the scrollable container
-
-  useEffect(() => {
-    fetch('/api/trusted-partners')
-      .then(res => res.json())
-      .then(data => {
-        setPartners(data);
-        setIsLoading(false);
-      });
-  }, []);
 
   // --- NEW: Scroll handler functions ---
   const handleScroll = (direction) => {
@@ -31,28 +20,17 @@ export default function TrustedPartners({ isLoggedIn, onAuthRequired }) {
     }
   };
 
-  const DetailButton = ({ partnerId }) => {
-    // This part remains the same
-    const commonProps = { className: styles.trustedDetailButton };
-    if (isLoggedIn) {
-      return (
-        <Link href={`/trusted-partners/${partnerId}`} {...commonProps}>
-          More details
-        </Link>
-      );
-    }
-    return (
-      <button onClick={onAuthRequired} {...commonProps}>
-        Login for details
-      </button>
-    );
-  };
+  const DetailButton = ({ partnerId }) => (
+    <Link href={`/trusted-partners/${partnerId}`} className={styles.trustedDetailButton}>
+      More details
+    </Link>
+  );
 
   return (
     <section className={styles.trustedPartnersSection}>
       <h2>Our Trusted Partners</h2>
-      {isLoading ? (
-        <p>Loading trusted partners...</p>
+      {partners.length === 0 ? (
+        <p>No trusted partners yet.</p>
       ) : (
         // --- NEW: Wrapper for buttons and list ---
         <div className={styles.trustedPartnersContainer}>
